@@ -79,8 +79,8 @@ int main()
 
     // build and compile our shader zprogram
     // ------------------------------------
-    Shader lightingShader("5.2.light_casters.vs", "5.2.light_casters.fs");
-    Shader lightCubeShader("5.2.light_cube.vs", "5.2.light_cube.fs");
+    Shader lightingShader(FileSystem::getPath("src\\2.lighting\\5.2.light_casters_point\\5.2.light_casters.vs").c_str(), FileSystem::getPath("src\\2.lighting\\5.2.light_casters_point\\5.2.light_casters.fs").c_str());
+    Shader lightCubeShader(FileSystem::getPath("src\\2.lighting\\5.2.light_casters_point\\5.2.light_cube.vs").c_str(), FileSystem::getPath("src\\2.lighting\\5.2.light_casters_point\\5.2.light_cube.fs").c_str());
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------

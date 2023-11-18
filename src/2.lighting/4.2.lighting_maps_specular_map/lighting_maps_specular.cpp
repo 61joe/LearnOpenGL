@@ -79,8 +79,8 @@ int main()
 
     // build and compile our shader zprogram
     // ------------------------------------
-    Shader lightingShader("4.2.lighting_maps.vs", "4.2.lighting_maps.fs");
-    Shader lightCubeShader("4.2.light_cube.vs", "4.2.light_cube.fs");
+    Shader lightingShader(FileSystem::getPath("src\\2.lighting\\4.2.lighting_maps_specular_map\\4.2.lighting_maps.vs").c_str(), FileSystem::getPath("src\\2.lighting\\4.2.lighting_maps_specular_map\\4.2.lighting_maps.fs").c_str());
+    Shader lightCubeShader(FileSystem::getPath("src\\2.lighting\\4.2.lighting_maps_specular_map\\4.2.light_cube.vs").c_str(), FileSystem::getPath("src\\2.lighting\\4.2.lighting_maps_specular_map\\4.2.light_cube.fs").c_str());
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------

@@ -79,8 +79,8 @@ int main()
 
     // build and compile our shader zprogram
     // ------------------------------------
-    Shader lightingShader("6.multiple_lights.vs", "6.multiple_lights.fs");
-    Shader lightCubeShader("6.light_cube.vs", "6.light_cube.fs");
+    Shader lightingShader(FileSystem::getPath("src\\2.lighting\\6.multiple_lights\\6.multiple_lights.vs").c_str(), FileSystem::getPath("src\\2.lighting\\6.multiple_lights\\6.multiple_lights.fs").c_str());
+    Shader lightCubeShader(FileSystem::getPath("src\\2.lighting\\6.multiple_lights\\6.light_cube.vs").c_str(), FileSystem::getPath("src\\2.lighting\\6.multiple_lights\\6.light_cube.fs").c_str());
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
