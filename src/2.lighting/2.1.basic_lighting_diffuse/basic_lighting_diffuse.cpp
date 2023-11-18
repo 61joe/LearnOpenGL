@@ -77,8 +77,8 @@ int main()
 
     // build and compile our shader zprogram
     // ------------------------------------
-    Shader lightingShader("2.1.basic_lighting.vs", "2.1.basic_lighting.fs");
-    Shader lightCubeShader("2.1.light_cube.vs", "2.1.light_cube.fs");
+    Shader lightingShader(FileSystem::getPath("src\\2.lighting\\2.1.basic_lighting_diffuse\\2.1.basic_lighting.vs").c_str(), FileSystem::getPath("src\\2.lighting\\2.1.basic_lighting_diffuse\\2.1.basic_lighting.fs").c_str());
+    Shader lightCubeShader(FileSystem::getPath("src\\2.lighting\\2.1.basic_lighting_diffuse\\2.1.light_cube.vs").c_str(), FileSystem::getPath("src\\2.lighting\\2.1.basic_lighting_diffuse\\2.1.light_cube.fs").c_str());
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
