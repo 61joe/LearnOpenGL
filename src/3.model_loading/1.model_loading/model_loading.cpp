@@ -78,7 +78,7 @@ int main()
 
     // build and compile shaders
     // -------------------------
-    Shader ourShader("1.model_loading.vs", "1.model_loading.fs");
+    Shader ourShader(FileSystem::getPath("src\\3.model_loading\\1.model_loading\\1.model_loading.vs").c_str(), FileSystem::getPath("src\\3.model_loading\\1.model_loading\\1.model_loading.fs").c_str());
 
     // load models
     // -----------
