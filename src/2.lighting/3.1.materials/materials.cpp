@@ -75,10 +75,10 @@ int main()
 	// -----------------------------
 	glEnable(GL_DEPTH_TEST);
 
-	// build and compile our shader zprogram
-	// ------------------------------------
-	Shader lightingShader(FileSystem::getPath("src\\2.lighting\\3.1.materials\\3.1.materials.vs").c_str(), FileSystem::getPath("src\\2.lighting\\3.1.materials\\3.1.materials.fs").c_str());
-	Shader lightCubeShader(FileSystem::getPath("src\\2.lighting\\3.1.materials\\3.1.light_cube.vs").c_str(), FileSystem::getPath("src\\2.lighting\\3.1.materials\\3.1.light_cube.fs").c_str());
+    // build and compile our shader zprogram
+    // ------------------------------------
+    Shader lightingShader(FileSystem::getPath("src\\2.lighting\\3.1.materials\\3.1.materials.vs").c_str(), FileSystem::getPath("src\\2.lighting\\3.1.materials\\3.1.materials.fs").c_str());
+    Shader lightCubeShader(FileSystem::getPath("src\\2.lighting\\3.1.materials\\3.1.light_cube.vs").c_str(), FileSystem::getPath("src\\2.lighting\\3.1.materials\\3.1.light_cube.fs").c_str());
 
 	// set up vertex data (and buffer(s)) and configure vertex attributes
 	// ------------------------------------------------------------------
